@@ -1,0 +1,32 @@
+{
+  "data":[
+    {
+      "id":0,
+      "clearAlarm":"清除告警",
+      "alarmLevel":"紧急告警",
+      "acceptTime":"2018-05-22 15:23:00",
+      "occurTime":"2018-05-22 15:23:00",
+      "alarmName":"互联网PING网络时延超时",
+      "lineName":"合肥民创中心互联网专线",
+      "alarmDetail":"【活动预警】--网元【10.5.65.23.4】"
+    },{
+      "id":1,
+      "clearAlarm":"清除告警",
+      "alarmLevel":"一般告警",
+      "acceptTime":"2018-05-22 15:23:00",
+      "occurTime":"2018-05-22 15:23:00",
+      "alarmName":"互联网PING网络时延超时",
+      "lineName":"合肥民创中心互联网专线",
+      "alarmDetail":"【活动预警】--网元【10.5.65.23.4】"
+    },{
+      "id":2,
+      "clearAlarm":"清除告警",
+      "alarmLevel":"一般告警",
+      "acceptTime":"2018-05-22 15:23:00",
+      "occurTime":"2018-05-22 15:23:00",
+      "alarmName":"互联网PING网络时延超时",
+      "lineName":"合肥民创中心互联网专线",
+      "alarmDetail":"【活动预警】--网元【10.5.65.23.4】"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "data":[
+    {
+      "id":0,
+      "netName":"天长市茶亭镇互联网专线",
+      "testTime":"2018-05-22 15:23:00",
+      "lineCountCase":"3424242452",
+      "task":"专线巡检",
+      "domainName":"112.38.16.89",
+      "ICMDelay":"60",
+      "ICMLost":"0",
+      "routeNode":"115.56.23.14",
+      "testType":"网页测试"
+    },
+    {
+      "id":1,
+      "netName":"和龙县白马龙虾镇互联网专线",
+      "testTime":"2018-05-22 15:23:00",
+      "lineCountCase":"3424242452",
+      "task":"专线巡检",
+      "domainName":"112.38.16.89",
+      "ICMDelay":"60",
+      "ICMLost":"0",
+      "routeNode":"115.56.23.14",
+      "testType":"Ping测试"
+    },
+    {
+      "id":2,
+      "netName":"天长市茶亭镇互联网专线",
+      "testTime":"2018-05-22 15:23:00",
+      "lineCountCase":"3424242452",
+      "task":"专线巡检",
+      "domainName":"112.38.16.89",
+      "ICMDelay":"60",
+      "ICMLost":"0",
+      "routeNode":"115.56.23.14",
+      "testType":"网页测试"
+    }
+  ]
+}

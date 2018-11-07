@@ -1,0 +1,41 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "dependencies": {
+    "ant-design-pro": "^1.4.4",
+    "antd": "3.0.0",
+    "babel-polyfill": "6.26.0",
+    "crypto-js": "3.1.9-1",
+    "es6-shim": "0.35.3",
+    "highcharts-exporting": "^0.1.7",
+    "lodash": "^4.17.10",
+    "mirrorx": "0.2.10",
+    "moment": "2.19.3",
+    "node-less-chokidar": "0.1.2",
+    "npm-run-all": "4.1.2",
+    "prop-types": "15.6.0",
+    "react": "16.2.0",
+    "react-cookie": "2.1.2",
+    "react-dom": "16.2.0",
+    "react-highcharts": "^16.0.2"
+  },
+  "scripts": {
+    "build-css": "node-less-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-less-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://192.168.2.101:8081"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "data":[
+    {
+      "id":0,
+      "portName":"FC port 8/45",
+      "physicalState":"正常",
+      "operationState":"异常",
+      "inflow":"37",
+      "outflow":"45",
+      "inflowPeak":"59",
+      "outflowPeak":"95"
+    },{
+      "id":1,
+      "portName":"FC port 8/46",
+      "physicalState":"正常",
+      "operationState":"异常",
+      "inflow":"7",
+      "outflow":"17",
+      "inflowPeak":"66",
+      "outflowPeak":"66"
+    },{
+      "id":3,
+      "portName":"FC port 8/47",
+      "physicalState":"正常",
+      "operationState":"异常",
+      "inflow":"4",
+      "outflow":"16",
+      "inflowPeak":"91",
+      "outflowPeak":"90"
+    }
+  ]
+}

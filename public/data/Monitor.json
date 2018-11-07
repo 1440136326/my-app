@@ -1,0 +1,31 @@
+{
+  "data":[
+    {
+      "id":0,
+      "name":"SnmpTrap告警任务",
+      "description":"Snmp Trap告警",
+      "expression":"00 35 14 * * ?",
+      "enabled":"已生效",
+      "status":"停止",
+      "operation":""
+    },
+    {
+      "id":1,
+      "name":"SYSLOGData告警任务",
+      "description":"SYSLOG日志告警",
+      "expression":"0 30 14 * * ?",
+      "enabled":"已生效",
+      "status":"停止",
+      "operation":""
+    },
+    {
+      "id":2,
+      "name":"SnmpWindows告警任务",
+      "description":"Snmp Windows主动获取告警",
+      "expression":"00 35 14 * * ?",
+      "enabled":"已生效",
+      "status":"停止",
+      "operation":""
+    }
+  ]
+}

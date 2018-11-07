@@ -1,0 +1,215 @@
+@import "/node_modules/antd/lib/style/themes/default.less";
+
+.ant-layout.layout-lc {
+    > .ant-layout-sider {
+        > .ant-layout-sider-children {
+            .logo {
+                display: block;
+                padding: 42px 12px 0px 12px;
+                height: 66px;
+                margin-bottom: 10px;
+                line-height: 24px;
+                font-size: 16px;
+                color: @text-color-dark;
+                background: url("/images/logo.svg") no-repeat;
+                background-size: auto 28px;
+                background-position: 10px 12px;
+                transition: all 0.4s;
+                overflow: hidden;
+            }
+        }
+        > .ant-layout-sider-trigger {
+            background: transparent;
+            text-align: right;
+
+            > .anticon {
+                display: inline-block;
+                height: 36px;
+                width: 36px;
+                background: rgba(255, 255, 255, 0.14);
+                color: #999;
+                line-height: 36px;
+                border-bottom-left-radius: 6px;
+                border-top-left-radius: 6px;
+            }
+        }
+        &.ant-layout-sider-collapsed {
+            > .ant-layout-sider-children {
+                .logo {
+                    padding: 0;
+                    margin: 0 20px;
+                    height: 50px;
+                    width: 40px;
+                    background-size: auto 30px;
+                    background-position: -62px 10px;
+                    transition: all 0.4s;
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    > .ant-layout {
+        > .ant-layout-header {
+            padding: 0 12px;
+            background: @component-background;
+
+            .pager-title {
+                position: relative;
+                left: 0;
+                height: 64px;
+                padding-left: 60px;
+                padding: 10px 0 0 50px;
+                .anticon,
+                .fa {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    line-height: 64px;
+                    text-align: center;
+                    font-size: 36px;
+                }
+                .title {
+                    display: block;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                .subtitle {
+                    color: @text-color-secondary;
+                    display: block;
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+
+            .pager-toolbar {
+                .ant-menu-item,
+                .ant-menu-submenu-title,
+                .ant-menu-item-active,
+                .ant-menu-submenu-title-active {
+                    padding: 0 14px;
+                    line-height: 64px;
+                    text-align: center;
+                    border-bottom: 0;
+                    > span > .anticon:only-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        > .ant-layout-content {
+            background: #fff;
+            margin: 12px 16px;
+
+            > .ant-breadcrumb {
+                padding: 0 0 12px 0;
+                background: @layout-body-background;
+            }
+            > .main-content {
+                padding: 12px;
+                min-height: 320px;
+            }
+        }
+
+        > .ant-layout-footer {
+            padding: 10px 0;
+            margin-bottom: 12px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    &.noContentBg > .ant-layout > .ant-layout-content {
+        background: @layout-body-background;
+    }
+}
+
+.ant-layout.layout-tc {
+    > .ant-layout-header {
+        display: flex;
+        padding: 0 12px;
+        overflow: hidden;
+
+        > .logo {
+            display: block;
+            flex: 0 0 220px;
+            height: 64px;
+            width: 200px;
+            padding-top: 32px;
+            font-size: 16px;
+            line-height: 32px;
+            color: @text-color-dark;
+            background: url("/images/logo.svg") no-repeat;
+            background-size: auto 24px;
+            background-position: 0px 8px;
+        }
+
+        > .ant-menu > .ant-menu-item,
+        > .ant-menu > .ant-menu-submenu > .ant-menu-submenu-title {
+            padding: 0 10px;
+            > span {
+                line-height: 64px;
+                > .anticon {
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        > .main-menu {
+            flex: auto;
+        }
+        > .pager-toolbar {
+        }
+
+    }
+    > .ant-layout-content {
+        margin: 12px 16px;
+        //padding: 0 12px;
+        background: @component-background;
+
+        > .ant-breadcrumb {
+            padding: 0 0 12px 0;
+            background: @layout-body-background;
+        }
+
+        > .pager-title {
+            position: relative;
+            left: 0;
+            height: 64px;
+            padding: 10px 0 0 66px;
+            .anticon,
+            .fa {
+                position: absolute;
+                top: 0;
+                left: 16px;
+                width: 50px;
+                line-height: 64px;
+                text-align: left;
+                font-size: 36px;
+            }
+            .title {
+                display: block;
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .subtitle {
+                color: @text-color-secondary;
+                display: block;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+
+        > .main-content {
+            padding: 0px 16px;
+        }
+    }
+    > .ant-layout-footer {
+        padding: 12px 0;
+        margin-bottom: 12px;
+        text-align: center;
+        font-size: 12px;
+    }
+}

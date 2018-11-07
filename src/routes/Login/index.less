@@ -1,0 +1,101 @@
+@import "/node_modules/antd/lib/style/themes/default.less";
+
+.login-pager {
+    display: flex;
+    justify-content: center;
+    > .login-card {
+        width: 320px;
+        margin-top: 100px;
+
+        .logo {
+            height: 32px;
+        }
+        .header {
+            display: block;
+            font-size: 16px;
+            padding: 10px 0 16px 0;
+        }
+        .powered {
+            display: block;
+            text-align: center;
+            color: @text-color-secondary;
+        }
+
+        .captcha {
+            position: relative;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 3px 25px 1px 25px;
+            margin: 12px 0;
+
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                content: '拖动至右端完成验证';
+                z-index: 10;
+            }
+
+            &.complete:before {
+                content: '验证完成';
+                color: @green-6;
+            }
+
+            > .ant-slider {
+                height: 28px;
+                background-color: #fff !important;
+                margin: 0;
+                .ant-slider-track {
+                    height: 0px;
+                    background-color: #fff !important;
+                }
+                .ant-slider-handle {
+                    margin-left: -23px;
+                    width: 46px;
+                    height: 28px;
+                    background: @blue-2;
+                    border-radius: 8px;
+
+                    z-index: 11;
+                    &:hover {
+                        transform: scale(1)
+                    }
+                    &:before {
+                        display: block;
+                        content: '|||';
+                        text-align: center;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: @blue-5;
+                    }
+                }
+
+                .ant-slider-rail {
+                    background: #fff;
+                }
+
+                &.ant-slider-disabled {
+                    .ant-slider-handle {
+                        background: @green-2;
+                        border-color: @green-5 !important;
+                        &:before {
+                            color: @green-5;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .login-btn {
+            width: 100%;
+        }
+
+        .changePwd{
+            float: right;
+        }
+    }
+}

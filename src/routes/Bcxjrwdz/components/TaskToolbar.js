@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form,Button,Input,Select} from 'antd';
+import {Form,Button,Input,Select,Upload,Icon} from 'antd';
 
 const TaskToolbar=({form})=>{
 
@@ -23,7 +23,7 @@ const TaskToolbar=({form})=>{
                         <Select style={{width:160}}>
                             <Select.Option value="TestType">测试类型</Select.Option>
                             <Select.Option value="ping">Ping测试</Select.Option>
-                            <Select.Option value="dns">DNS测试</Select.Option>
+                            {/*<Select.Option value="dns">DNS测试</Select.Option>*/}
                             <Select.Option value="web">网页测试</Select.Option>
                             <Select.Option value="download">下载测试</Select.Option>
                         </Select>
@@ -33,6 +33,11 @@ const TaskToolbar=({form})=>{
             <Form.Item>
                 <Button htmlType="submit" icon="search" type="primary">查询</Button>
             </Form.Item>
+            <Upload showUploadList={false} action="/nodeapi/upload">
+                <Button type="primary">
+                    <Icon type="upload"/>上传
+                </Button>
+            </Upload>
         </Form>
     )
 }

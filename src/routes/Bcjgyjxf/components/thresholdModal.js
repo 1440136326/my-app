@@ -2,7 +2,6 @@ import React from 'react';
 import {Modal,Form,Input,Checkbox} from 'antd';
 import {connect,actions} from 'mirrorx';
 
-import '../index.css'
 
 class ThresholdModal extends React.Component{
 
